@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+div {
+  border: 7px solid;
+  border-image: linear-gradient(to left, tomato, purple) 1;
+}
+h2 {
+  color: gray;
+  text-align: right;
+  margin-right: 100px;
+}
+p {
+  background: linear-gradient(
+    to left,
+    yellow 10%,
+    tomato 20%,
+    #5485d0 60%,
+    #48ee69 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500%;
+  animation: textShine 3.5s ease-in-out infinite alternate;
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
